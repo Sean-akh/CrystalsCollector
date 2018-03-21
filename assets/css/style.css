@@ -1,0 +1,132 @@
+/**** Reset ****/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video header1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* clear fix */
+.grouping:before,
+.grouping:after {
+  content: " ";
+  display: table; 
+}
+
+body {
+    font-family: open sans;
+    color: #2c3235;
+    background-image: url(../images/diamond_upholstery.png);
+}
+h1{
+    font-family: Exo;
+    font-weight: bold;
+    font-size: 65px;
+    color: #b11116;
+}
+
+
+h2 {
+    font-family: Exo;
+    font-size: 42PX;
+    font-weight: 600;
+    color: #0077f0;
+}
+
+h3 {
+    font-family: Exo;
+    font-size: 32PX;
+    font-weight: 600;
+    color: #0077f0;
+}
+
+.jumbotron{
+    box-shadow: 5px 5px 20px #555555;
+    background-image: url(../images/BG-Banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    /*background-blend-mode: multiply;
+    background-color: rgb(180, 180, 180);*/
+    border-radius: 50%;
+    margin-top: 15px;
+
+}
+
+.jumbotron h1 {
+  /*  color: white;*/
+  text-shadow: white;
+}
+
+/* Game's random number to match */
+#GameScoreBoard {
+    font-size: 16px;
+    padding: 5%;
+    border: 1px solid #2c3235;
+    margin: 1%;    
+}
+/*** Present the rules of the game ***/
+#gameRule {
+    font-size: 16px;
+    padding: 5%;
+    border: 1px solid #2c3235;
+    margin: 1% 0 1% 0;
+}
+.rules{
+    font-weight: 600;
+}
+
+/**ul setup **/
+.rules ul {
+    text-align: justify;
+    padding-top: .5em;
+    list-style: none;
+    margin: 0px;
+    font-size: 14px;
+    padding-right: 20px;
+}
+
+.rules li {
+    padding-bottom: 8px;
+    padding-bottom: 1em;
+    text-indent: -.5em;
+    /*list-style-type: square;*/
+    
+}
+
+.rules li ::before {
+    content: "■";
+    color: #4AAAA7;
+    display: inline-block;
+    width:  2em;
+    margin-left: -1.5em;
+}
+/** ul setup ENDS***/
+
+/*diamonds with the random number*/
+.crystalSection {
+    padding: 1% 0 1% 0;
+    border: 1px solid #2c3235;
+    margin: 1% 0 1% 0;
+}
+.DiamondRandom{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: auto;
+}
