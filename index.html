@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google font import for Open Sans and Exo2-->
+    <link href="https://fonts.googleapis.com/css?family=Exo:300,400,500,700|Open+Sans+Condensed:300|Open+Sans:200,300,400|PT+Sans|Raleway" rel="stylesheet">
+
+    <!-- connect to jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- connect to Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+    <!-- My Style sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron text-center"><h1>CRYSTAL COLLECTOR</h1></div>
+    <div class="row">
+        <!-- Rules of the game starts -->
+        <div id="gameRule" class="col-md-12 rules">
+                <h3>Rules of the Game</h3>
+                <ul>
+                    <li>Below there are four crystals as botton</li>
+                    <li>A random number is displayed at the start of the game under "the Game Score".</li>
+                    <li>When click on a crystal, it will add a specific amount of points to the player's total score.</li>
+                    <li>The value of each Crystal is hidden. But the overall score is updated</li>
+                    <li>The game is won when the player's score match the Game's score. The player loose if the score is more than the Game's score.</li>
+                </ul>
+        </div>
+        <!-- Rules of the Game ENDS -->
+        <!-- Let the Game Begins -->
+
+        <!-- Game Score Board Begins. The Game's Score  -->
+        <div class="col-md-7 text-center" id="GameScoreBoard">
+               
+        </div>
+        <!-- Game Score Board begins -->
+
+        <!-- Win -Loss Account Begins -->
+        <div id="WinLossBoard" class="col-md-4">
+
+            <!-- Win -Loss ROW Begins -->
+            <div class="row">
+                <!-- Win -column Begins. Player win/Game Loss-->
+                <div class="col-md-12 text-center" id="WinRow">
+                     <!-- Win COL  -->
+                </div>
+                <!-- Win  -column  ENDs -->
+                <!-- Loss -column Begins. Game Win/Player Loss -->
+                <div class="col-md-12 text-center" id="LossRow">
+                    <!-- Loss COL -->
+                </div>
+                <!-- Loss -column END -->
+            </div>
+            <!-- Win -Loss ROW ENDS -->
+
+        </div>
+        <!-- Win -Loss Account ENDS -->
+
+        <!-- Crystall Section Begins -->
+        <div class="col-md-12  crystalSection">
+            <div class="row">
+                <div class="col-md-2" id="CrystalSideLeft">
+                        <!-- Extra column to bring the diamonds closer together -->
+                    </div>
+                <div class="col-md-2">
+                    <input type="image" src="assets/images/Diamond1.png" class="DiamondRandom" id="diamond1" value="">
+                </div>
+                <div class="col-md-2">
+                     <input type="image" src="assets/images/Diamond2.png" class="DiamondRandom" id="diamond2" value="">
+                </div>
+                <div class="col-md-2">
+                    <input type="image" src="assets/images/Diamond3.png" class="DiamondRandom" id="diamond3" value="">
+                </div>
+                <div class="col-md-2">
+                    <input type="image" src="assets/images/Diamond4.png" class="DiamondRandom" id="diamond4" value="">
+                </div>
+                <div class="col-md-2" id="CrystalSideRight">
+                        <!-- Extra column to bring the diamonds closer together -->
+                </div>
+            </div>
+        </div>
+        <!-- Crystall Section ENDS -->
+         <!-- Player Score Board Begins. Player's Score -->
+         <div class="col-md-12 text-center" id="scoreBoard">
+           <!--  Score Board...-->
+        </div>
+        <!--Player Score Board ENDS -->
+
+        <!-- Game ENDS -->
+    </div>
+  </div> 
+  <script src="assets/javasccript/game.js"></script> 
+</body>
+</html>

@@ -44,14 +44,21 @@ h1{
 h2 {
     font-family: Exo;
     font-size: 42PX;
-    font-weight: 600;
+    font-weight: 400;
     color: #0077f0;
 }
 
 h3 {
     font-family: Exo;
     font-size: 32PX;
-    font-weight: 600;
+    font-weight: 400;
+    color: #0077f0;
+}
+
+h4 {
+    font-family: Exo;
+    font-size: 20PX;
+    font-weight: 400;
     color: #0077f0;
 }
 
@@ -73,13 +80,7 @@ h3 {
   text-shadow: white;
 }
 
-/* Game's random number to match */
-#GameScoreBoard {
-    font-size: 16px;
-    padding: 5%;
-    border: 1px solid #2c3235;
-    margin: 1%;    
-}
+
 /*** Present the rules of the game ***/
 #gameRule {
     font-size: 16px;
@@ -121,12 +122,58 @@ h3 {
 /*diamonds with the random number*/
 .crystalSection {
     padding: 1% 0 1% 0;
-    border: 1px solid #2c3235;
+    background-image: url(../images/BG-Banner5.jpg);
+    border-top: 1px solid #2c3235;
+    border-right: 1px solid #2c3235;
+    border-left: 1px solid #2c3235;
+    border-bottom: 30px solid #b11116;
     margin: 1% 0 1% 0;
 }
+
 .DiamondRandom{
     margin-left: auto;
     margin-right: auto;
     width: 100px;
     height: auto;
+}
+
+/* Game's random number to match */
+#GameScoreBoard {
+    font-size: 16px;
+    padding: 5%;
+    border-top: 1px solid #2c3235;
+    border-right: 1px solid #2c3235;
+    border-left: 1px solid #2c3235;
+    border-bottom: 30px solid #0077f0;
+    margin: 1%;    
+}
+
+#WinRow {
+    font-size: 16px;
+    padding: 5%;
+    border-top: 5px solid #2c3235;
+    border-right: 1px solid #2c3235;
+    border-left: 1px solid #2c3235;
+    border-bottom: 30px solid #0077f0;
+    margin: 1% 1% 3% 1%; 
+}
+
+#LossRow{
+    font-size: 16px;
+    padding: 5%;
+    border-top: 5px solid #2c3235;
+    border-right: 1px solid #2c3235;
+    border-left: 1px solid #2c3235;
+    border-bottom: 30px solid #0077f0;
+    margin: 3% 1% 1% 1%; 
+}
+
+#scoreBoard{
+    padding: 5%;
+    border-top: 5px solid #2c3235;
+    border-right: 1px solid #2c3235;
+    border-left: 1px solid #2c3235;
+    border-bottom: 30px solid #0077f0;
+    margin: 1% 1% 3% 1%;
+
 }
